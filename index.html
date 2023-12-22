@@ -3,31 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Wednesday 5:21,overcast clouds
-          <br />
-          Humidity: 67%, Wind:3.12km/h
-        </p>
-      </div>
-      <div>🌤 12°C</div>
-    </main>
-    <footer>
-      This project was coded by <a href="# ">Olalekan Aliyah</a>,<a href="#"
-        >open sourced on GitHub</a
-      >
-      and <a href="#">hosted on Netlify</a>
-    </footer>
+    <div class="overall">
+      <header>
+        <form>
+          <input
+            type="search"
+            class="search"
+            placeholder="Enter a city...."
+            required
+          />
+          <input type="submit" value="search" class="submit" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1 class="city">Paris</h1>
+
+          <p class="info">
+            Wednesday 5:21,overcast clouds
+            <br />
+            <strong
+              >Humidity: <span class="humidity">67% </span>, Wind:
+              <span class="wind">3.12km/h</span>
+            </strong>
+          </p>
+        </div>
+        <div class="data">
+          <div class="weather-container">
+            <span class="icon">🌤</span>
+            <span class="temperature">12</span> <span class="unit">°C </span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by <a href="# ">Olalekan Aliyah</a>, open source
+        on<a href="#"> GitHub</a>
+
+        and <a href="#">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
