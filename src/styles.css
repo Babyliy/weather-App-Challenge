@@ -43,6 +43,7 @@ p {
 footer {
   border-top: 2px solid #f9f7fe;
   padding: 25px 0 0 0;
+  font-size: 15px;
 }
 .data {
   display: flex;
@@ -66,5 +67,5 @@ footer {
 }
 .unit {
   font-size: 28px;
-  margin-top: -102px;
+  margin-top: -95px;
 }
