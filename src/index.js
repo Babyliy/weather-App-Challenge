@@ -6,9 +6,6 @@ function updateWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
-  console.log('hello');
-  console.log(response);
-
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = `${date.getDay()} ${date.getHours()}:${date.getMinutes()}`;
   h1.innerHTML = response.data.city;
